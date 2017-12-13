@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+.myCards {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+label {
+  padding-right: 0.25rem;
+  /* margin: 0.25rem; */
+}
+
+form {
+  margin: 10px;
+  padding: 10px;
+}
+
+.form-group {
+ display: flex;
+ justify-content: center;
+}
+
+.btn {
+  margin: 0.5rem;
+}
+
