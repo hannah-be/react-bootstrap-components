@@ -9,6 +9,7 @@ import { Form, FormButton, FormGroup, Input, Label, FormCheck } from './componen
 import Container from './components/grid/Container'
 import Row from './components/grid/Row'
 import Col from './components/grid/Col'
+import Progress from './components/Progress'
 
 
 class App extends Component {
@@ -18,12 +19,11 @@ class App extends Component {
           <Col>Even</Col>
           <Col>Columns</Col>
         </Row>
+        <Row />
         <Row>
-          <Col width={4}>This is 1/3</Col>
-          <Col width={8}>This is 2/3</Col>
-        </Row>
-        <Row>
-          <Col sm={4} md={5}>This is 1/3 but even on a small screen</Col>
+          <Col sm={4} md={5}>
+            This is 1/3 but even on a small screen
+          </Col>
           <Col sm={8}>This is 2/3 but even on a small screen</Col>
         </Row>
         <Row>
@@ -75,21 +75,21 @@ class App extends Component {
           </Card>
         </div>
         <hr />
+        <Progress />
         <Row>
-          <Col width={4}>
-          </Col>
-        <Form>
-          <FormGroup>
-            <Label for="email">Email</Label>
-            <Input type="email" id="email" />
-          </FormGroup>
-          <FormGroup>
-            <Label for="password">Password</Label>
-            <Input type="password" id="password" />
-          </FormGroup>
-          <FormCheck>Check box label</FormCheck>
-          <FormButton type="submit">Submit</FormButton>
-        </Form>
+          <Col width={4} />
+          <Form>
+            <FormGroup>
+              <Label for="email">Email</Label>
+              <Input type="email" id="email" />
+            </FormGroup>
+            <FormGroup>
+              <Label for="password">Password</Label>
+              <Input type="password" id="password" />
+            </FormGroup>
+            <FormCheck>Check box label</FormCheck>
+            <FormButton type="submit">Submit</FormButton>
+          </Form>
         </Row>
       </Container>;
 }}
