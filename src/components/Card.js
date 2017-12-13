@@ -1,10 +1,11 @@
 import React from 'react'
 
 export function Card({
-  children
+  children,
+  width='15rem'
 }) {
   return (
-    <div className="card" style={{width: '15rem'}}>
+    <div className="card" style={{width: width}}>
     {children}
     </div>
   )

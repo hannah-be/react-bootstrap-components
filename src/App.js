@@ -75,6 +75,9 @@ class App extends Component {
           </Card>
         </div>
         <hr />
+        <Row>
+          <Col width={4}>
+          </Col>
         <Form>
           <FormGroup>
             <Label for="email">Email</Label>
@@ -87,6 +90,7 @@ class App extends Component {
           <FormCheck>Check box label</FormCheck>
           <FormButton type="submit">Submit</FormButton>
         </Form>
+        </Row>
       </Container>;
 }}
 
