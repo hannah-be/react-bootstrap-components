@@ -34,21 +34,21 @@ class App extends Component {
         <hr />
         <div className="myCards">
         <Card>
-        <CardImage src={require("./cardimage1.jpg")} alt="My card image" />
+        <CardImage src={require("./assets/cardimage1.jpg")} alt="My card image" />
         <CardBody>
           <CardTitle>This is my card title</CardTitle>
           <CardText>This is my card text</CardText>
         </CardBody>
         </Card>
         <Card>
-        <CardImage src={require("./cardimage2.jpg")} alt="My card image" />
+        <CardImage src={require("./assets/cardimage2.jpg")} alt="My card image" />
         <CardBody>
           <CardTitle>This is my card title</CardTitle>
           <CardText>This is my card text</CardText>
         </CardBody>
         </Card>
         <Card>
-        <CardImage src={require("./cardimage3.jpg")} alt="My card image" />
+        <CardImage src={require("./assets/cardimage3.jpg")} alt="My card image" />
         <CardBody>
           <CardTitle>This is my card title</CardTitle>
           <CardText>This is my card text</CardText>
