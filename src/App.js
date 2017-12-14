@@ -10,31 +10,22 @@ import Container from './components/grid/Container'
 import Row from './components/grid/Row'
 import Col from './components/grid/Col'
 import Progress from './components/Progress'
+import ButtonGroup from './components/ButtonGroup'
 
 
 class App extends Component {
   render() {
-    return <Container>
+    return (
+      <Container fluid>
         <Row>
           <Col>Even</Col>
           <Col>Columns</Col>
         </Row>
-        <Row />
-        <Row>
-          <Col sm={4} md={5}>
-            This is 1/3 but even on a small screen
-          </Col>
-          <Col sm={8}>This is 2/3 but even on a small screen</Col>
-        </Row>
-        <Row>
-          <Col sm={true}>This is an even column,</Col>
-          <Col sm={true}> even on a small screen</Col>
-        </Row>
-        <div className="mt-3">
+        <ButtonGroup>
           <Button title="Google" href="https://www.google.com/" />
           <Button title="Second" variation="info" />
           <Button title="Third" variation="warning" />
-        </div>
+        </ButtonGroup>
         <div className="mt-3">
           <Nav>
             <NavItem>First</NavItem>
@@ -75,7 +66,8 @@ class App extends Component {
           </Card>
         </div>
         <hr />
-        <Progress />
+        <Row>
+        </Row>
         <Row>
           <Col width={4} />
           <Form>
@@ -91,7 +83,14 @@ class App extends Component {
             <FormButton type="submit">Submit</FormButton>
           </Form>
         </Row>
-      </Container>;
+        <Progress type='bg-info' width='25'>This is 25%</Progress>
+        <hr />
+        <Progress type='bg-warning' width='50'>This is 50%</Progress>
+        <hr />
+        <Progress type='bg-primary' width='100'>This is 100%</Progress>
+        <hr />
+      </Container>
+    )
 }}
 
 export default App;
